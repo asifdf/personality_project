@@ -39,7 +39,7 @@ export default function Login() {
           type="submit" 
           className="w-full bg-blue-600 text-white p-2 rounded-md hover:bg-blue-700"
         >
-          로그인
+          
         </button>
       </form>
     </div>
