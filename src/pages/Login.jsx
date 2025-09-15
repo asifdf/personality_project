@@ -1,5 +1,6 @@
 // src/pages/Login.jsx
 import { useState } from "react";
+import logo from "../assets/logo.png";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -16,7 +17,7 @@ export default function Login() {
         onSubmit={handleSubmit} 
         className="bg-white p-6 rounded-2xl shadow-lg w-80"
       >
-        <h2 className="text-2xl font-semibold text-center mb-4">Login</h2>
+        <img src={logo} alt="로고" className="mx-auto mb-4 w-24 h-24 object-contain" /> 
 
         <input
           type="email"
