@@ -1,13 +1,20 @@
-import './App.css'
+// src/App.jsx
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Login from "./pages/Login";
 
-function App() {
-  return (
-    <>
-      <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </>
-  )
+function Home() {
+  return <h1 className="p-4">홈 화면</h1>;
 }
 
-export default App
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Header />   {/* 공통 헤더 */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
