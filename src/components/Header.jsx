@@ -1,3 +1,11 @@
+// // src/components/Header.jsx
+// import { Link } from "react-router-dom";
+
+// export default function Header() {
+//   return (
+//     <header className="w-full flex justify-between items-center px-6 py-3 shadow-md bg-white">
+//       {/* 로고 */}
+//       <Link to="/" className="text-xl font-bold text-blue-600">
 // src/components/Header.jsx
 import { Link } from "react-router-dom";
 
